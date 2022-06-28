@@ -38,6 +38,3 @@ def get_candidates_by_skill(skill_name):
         if skill_name in skills_list:
             approved.append(candidate)
     return approved
-
-x = get_candidates_by_skill("go")
-pass

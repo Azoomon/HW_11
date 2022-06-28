@@ -26,4 +26,5 @@ def page_per_skill(skill_name):
     candidates = get_candidates_by_skill(skill_name)
     return render_template('skill.html', candidates=candidates, skill_name=skill_name)
 
-app.run()
+if __name__ == "__main__":
+    app.run()
