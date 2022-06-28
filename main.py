@@ -5,7 +5,6 @@ from utils import get_candidates_by_skill, get_candidate, get_candidates_by_name
 app = Flask(__name__)
 
 @app.route("/")
-
 def index_page():
     candidates = load_candidates_from_json('candidates.json')
     return render_template("list.html", candidates=candidates)
